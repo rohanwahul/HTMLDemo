@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+
+    <form action="HtmlSubPage2.html">
+        <!-- when i press submit then action goes to "HtmlSubPage2.html"  -->
+        <p>
+            Enter first Name :<input type="text" id="fname" name="fname" required />
+            <!--when u write required word at end then it is mandatory ti fill that field-->
+            Enter last Name :<input type="text" id="lname" name="lname" required />
+
+        <p>
+            Create Password :<input type="password" id="P1" name="Pass" />
+        </p>
+        <p>
+            Create UserId :<input type="text" id="usid" name="usid" />
+        </p>
+        <p>
+            Select Gender :<input type="radio" id="g1" name="gender" /> Male
+            <input type="radio" id="g2" name="gender" /> Female
+        </p>
+        <p>
+            select experience :<input type="radio" id="e1" name="exp" /> fresher
+            <input type="radio" id="e2" name="exp" /> 2- 5 exp
+            <input type="radio" id="e3" name="exp" /> 5- 8 exp
+        </p>
+        <p>
+            select hobbies<input type="checkbox" id="h1" name="hobbies" /> reading books
+            <input type="checkbox" id="h2" name="hobbies" /> music
+            <input type="checkbox" id="h3" name="hobbies" /> sports
+        </p>
+
+
+        <p>
+            Select City : <select>
+                <!-- Select is Use For Dropdown -->
+                <option>Solapur</option>
+                <option>Aurangabd</option>
+                <option>Nagpur</option>
+                <option>Pune</option>
+            </select>
+            <select>
+                <optgroup label="Group 1">
+                    <option>Solapur</option>
+                    <option>Aurangabd</option>
+
+                </optgroup>
+
+                <optgroup label="Group 2">
+                    <option>Nagpur</option>
+                    <option>Pune</option>
+
+                </optgroup>
+            </select>
+
+
+            <select multiple>
+                <!--using multiple we can accept multiple input in the form of list-->
+                <option>Solapur</option>
+                <option>Aurangabd</option>
+                <option>Nagpur</option>
+                <option>Pune</option>
+            </select>
+        </p>
+
+        <p>
+            <input type="submit" value="Submit form" /> <!--submit work with form tag-->
+            <input type="reset" value="Clear Form." />
+        </p>
+    </form>
+    <!--when u clk submit form  then what ever u code in <form> </form> tag will get execute,
+    and u provide any action to it like here ( <form action="HtmlSubPage2.html"> )then control goes to htmlSubPage2.html-->
+
+</body>
+</html>
