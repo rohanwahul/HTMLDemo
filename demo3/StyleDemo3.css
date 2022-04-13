@@ -1,0 +1,49 @@
+﻿.header {
+
+}
+
+.menu {
+
+       position:sticky; 
+        top:0px;
+
+    height:70px;
+    background-color: darkgray;
+}
+
+    .menu ul {
+        float: right; /*float menu content to right*/
+        list-style-type: none; /*it remove bullets from list*/
+    }
+    .menu ul li {
+       
+        display: inline-flex; /*it shows manu content in line*/
+        list-style-type: none; /*it remove bullets from list*/
+        margin-right:50px;
+    }
+        .menu ul li a { color:aliceblue;
+            font-size: 25px;
+            font-weight:bold;
+            text-decoration: none; /*it remove underline from list*/
+        }
+            .menu ul li a:hover {
+                color: black !important; /*by writing "!important" it cant be modify by other code*/
+            }
+           
+.main-content {
+    height:900px;
+}
+
+.banner { color:red;
+    background-image:url('banner.jpg');
+    height:300px;
+}
+
+.footer {
+}
+
+        .footer  div { position:relative;
+               top:20px;
+      text-align:center;
+      color:blue;
+        }

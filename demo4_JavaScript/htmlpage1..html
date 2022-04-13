@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <script > function sub() {
+            var num1 = document.getElementById("n1").value;
+            var num2 = document.getElementById("n2").value;
+
+            var sub = parseInt(num1) - parseInt(num2);
+
+           // console.log(sub);
+
+     document.getElementById("n3").value = sub;
+
+     document.getElementById("res").innerHTML ="sub is :"+sub;//innerHTML set value to html elemnt/tag  
+
+
+        }
+    </script>
+
+    <script src="JavaScript.js"></script>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <p>
+        Enter 1St no:<input type="text" id="n1" /> <br />
+        Enter 2Nt no:<input type="text" id="n2" /> <br />
+        Result      :<input type="text" id="n3" /> <br />
+        <input type="button" value="Addition" onclick="add()" />
+        <input type="button" value="Multiply"  onclick="mul()"/>
+        <input type="button" value="Division" onclick="div()" />
+        <input type="button" value="Subtract"  onclick="sub()"/><br />
+        <h1 id="res"></h1>
+    </p>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+
+    <div id="d1"></div>
+    <script>
+        // object in javascript
+        var empList = [
+            {
+            name: "Shital",
+
+            eid: 1,
+
+                sal: 500,
+            },
+
+             {
+                name: "vishal",
+
+                eid: 2,
+
+                sal: 5000,
+            },
+
+              {
+                name: "rupesh",
+
+                eid: 5,
+
+                sal: 50410,
+            },
+
+        ];
+
+        var data = "<table border='1'><tr><th>EName</th><th>eid</th><th>salary</th></tr>";
+        for (var i = 0; i < empList.length; i++)
+            {
+            data += "<tr><td>" + empList[i].eid+ "</td><td>" + empList[i].name + "</td><td>" + empList[i].sal+"</td><tr>";
+            }
+        data += "</table>";
+        document.getElementById("d1").innerHTML = data;
+
+    </script>
+</body>
+</html>
